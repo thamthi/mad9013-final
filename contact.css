@@ -1,0 +1,151 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display+SC:700italic);
+@import url(https://fonts.googleapis.com/css?family=Exo+2:500italic);
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+	font-family: 'Exo 2', sans-serif;
+}
+
+body{
+	font-size: 100%;
+    background-image: url('img/image6.jpg');
+}
+
+h2, h1{
+	font-family:'Playfair Display SC', serif;
+	padding:1rem 0.5rem;	
+}
+
+h1{
+	font-size: 2.8rem;	
+	color:#FC3;
+    text-shadow: 1px 1px #000 , -1px -1px 1px gold;
+}
+
+h2{
+	font-size: 2.8rem;
+}
+
+.wrapper{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.masthead{
+	color:#fff;
+	border-bottom: 1px solid #333;
+    background-image: url('img/image7.jpg');
+}
+
+form{
+	width: 100%;
+    margin: 0 auto;
+}
+
+fieldset{
+    border:1px solid #f0ecdb;
+}
+
+legend{
+	text-align: center;
+    color: #FFF;
+    font-size: 100%;
+    border: 1px solid #f0ecdb;
+    padding: 1rem 1rem;
+}
+
+.formbox
+    padding: 1rem 1rem 0 1rem;
+}
+
+.formbox:last-of-type {
+    padding: 1rem;
+}
+
+label{
+	display: none;
+    
+}
+
+input {
+	display: block;
+    width: 100%;
+	font-size: 1.2rem;
+	color: #333;
+    padding: 0.5rem;
+}
+
+input[type="submit"] {
+    background-image: url('img/image7.jpg');
+    border: none;
+    padding: 0.6rem;
+}
+
+.alert{
+    color:red;
+}
+#name{
+    color: brown;
+}
+
+/*------------------- media layout---------------------------------------------------------------*/
+
+@media screen and (min-width: 560px) and (max-width: 960px) {
+
+    label {
+        display: block;
+        font-size: 1.2rem;
+        margin: 0 auto;
+        padding: 1rem;
+        
+    }
+    .formbox {
+        float: left;
+        width: 50%;
+    }
+}
+
+ @media screen and (min-width:961px) {
+    
+    label {
+        display: inline-block;
+        float: left;
+        width: 96px;
+        font-size: 1.2rem;
+        line-height: 2.4rem;
+        margin: 0 auto;
+        padding: 0.3rem;
+       
+    }
+     
+    input {
+        display: inline-block;
+        float: left;
+        width: 80%
+        
+    }
+     
+    input[type="submit"]{
+
+    }
+     
+    .formbox {
+        float: left;
+        width: 50%;
+    }
+     
+    .formbox::after {
+        clear: both;
+    }
+}
+
+ @media screen and (min-width:1140px) {
+         input[type="submit"]{
+        margin: 0 0 0 6rem;
+        
+    }
+ }

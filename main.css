@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display+SC:700italic);
+@import url(https://fonts.googleapis.com/css?family=Exo+2:500italic);
+
+@import url(https://fonts.googleapis.com/css?family=Lobster|Libre+Baskerville);
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville|PT+Sans|Great+Vibes|Pacifico|Courgette);
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('img/image6.jpg');
+}
+
+html, body{
+    font-family: sans-serif,'Exo 2', 'Helvetica Neue';
+}
+
+navbar li a:hover{
+    @link-color:black;
+    background-color: #CCC;
+}
+
+h2,h3,h4{
+    font-family:serif,'Playfair Display SC', 'Helvetica Neue';
+}
+
+.profile{
+    background-image: url('img/image7.jpg');
+}
+
+.alist-of-skills{
+    background-image: url('img/beige.jpg');
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+#bootstrap-overide img{
+    width: 100%;
+    height: auto;
+}
+
+#bootstrap-overide p::after {
+    content: "";
+    display: block;
+    clear: right;
+
+}
+
+#bootstrap-overide li a{
+    line-height: 2.6;
+    float: left;
+    width: 15%;
+    text-align: center;
+}
+
+#bootstrap-overide .card {
+    background-color: #fff;
+    height: 500px;
+    border: none;
+    padding: 1rem;
+}
+    
+@media all and (min-width:34rem){
+    #abootstrap-overide li{
+            display: inline;
+
+    }
+    #bootstrap-overide .card {
+        height: 400px;
+    }
+}

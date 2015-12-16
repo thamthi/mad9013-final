@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>Bootstrap</title>
+</head>
+
+<body>
+    <div id="bootstrap-overide">
+        <div class="container-fluid">
+            <nav class="navbar">
+                <a class="navbar-brand" href="#">Tham Thi Cao</a>
+                <button type="button" class="navbar-toggler hidden-sm-up" data-toggle="collapse" data-target=".navbar-collapse">&#9776;</button>
+                <div class="navbar-collapse collapse navbar-toggleable-xs">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="project.html">Project</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div> 
+        <div class="container-fluid">
+            <div class="wrapper">
+                    <header class="masthead">
+                        <h1>Contact Page</h1>
+                    </header>
+                    <section>
+                        <form name="profileForm" onsubmit="return validate.validateProfile();">
+                            <fieldset>
+                                <legend>Please fill out the form to get in touch with me in order to hire me for a job</legend>
+                                <div class="formbox">
+                                   <label for="name">Name:</label>
+                                    <input type="text" id="name" placeholder="Name">
+                                    <span id="nameWarning" class="alert"></span>
+                                </div>
+                                <div class="formbox">
+                                    <label for="email">E-mail:</label>
+                                    <input type="email" id="email" placeholder="Email">
+                                    <span id="emailWarning" class="alert"></span>
+                                </div>
+                                <div class="formbox">
+                                    <label for="message">Message:</label>
+                                    <input type="text" id="message" placeholder="Message">
+                                    <span id="messageWarning" class="alert"></span>
+                                </div>
+                                <div class="formbox">
+                                    <label for="pass">Password:</label>
+                                    <input type="password" id="password" placeholder="Password">
+                                    <span id="passwordWarning" class="alert"></span>
+                                </div>
+                                <div class="formbox ">
+                                    <input type="submit" value="Send Request">
+                                </div> 
+                            </fieldset>  
+                        </form>
+                    </section>
+                </div>
+        </div>
+    </div>
+    <script src="validate.js"></script>
+    <script src="events.js"></script>
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    
+</body>
+
+</html>
